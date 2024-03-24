@@ -21,7 +21,7 @@ namespace CarRegister.Models
 
         public DateTime RegisteredDate { get; set; } = DateTime.Now;
 
-        public bool IsActive { get; set; } = false;
+        public int IsActive { get; set; } = 1;
 
         [MaxLength(150), Column(TypeName = "nvarchar(150)")]
         public string Driver { get; set; } = "Driver";
